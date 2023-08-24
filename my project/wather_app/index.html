@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wather_app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="wedsite icon" type="png" href="krishna.jpeg"> -->
+    <!-- <link rel="icon" type="image/png" href="krishna.jpeg"> -->
+    <link rel="icon" href="krishna.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="firstbox">
+        <div class="heder">
+            <input type="text" placeholder="Enter the location" id="inputbox">
+            <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+        </div>
+        <div class="erroe404">
+            <h1>sorry location not found</h1>
+             <img src="/image/error.jpg" alt="location not found" >
+
+
+        </div> 
+
+        <div id="weather-body">
+            <img src="/image/cloud_sun.jpg" alt="weather" class="weatherimg">
+            <div id="weather-box" >
+                <p id="temp">0<sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid  fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid  fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+

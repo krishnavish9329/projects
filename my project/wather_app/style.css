@@ -1,0 +1,140 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+    border: 8px solid red;
+    background-color: black;
+
+}
+#firstbox{
+    margin: auto;
+    height: min-content;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+
+}
+.heder{
+    margin: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.inputbox{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 400;
+}
+
+input{
+    background-color: rgb(201, 253, 255);
+    font-size: 25px;
+    border-radius: 25px ;
+    margin: 10px 5px 10px 10px;
+}
+input::placeholder{
+    color: black;
+}
+input:hover{
+    border: 2px solid black;
+}
+button{
+    background-color: rgb(201, 253, 255);
+    padding-left: 20px;
+    border-radius: 25px ;
+    padding: 20px;
+    margin: 10px 10px 10px 5px;
+    border: 3px soldi black;
+    font-size: 19.5px;
+}
+button:hover{
+    border: 2px solid black;
+}
+button:active{
+    border: 4px solid black;
+    background-color: rgb(255, 206, 59);
+}
+#weather-body {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+#weather-body img{
+    width: 55%;
+}
+#weather-box{
+    margin: 20px;
+    text-align: center;
+}
+#weather-box #temp{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+#weather-box #temp  sup{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+}
+#weather-box .description
+{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+.humidity , .wind{
+    display: flex
+}
+.humidity{
+    padding-left: 25px;
+}
+.wind{
+    padding-right: 25px;
+}
+.weather-details i{
+    font-size: 30px;
+}
+.text{
+    margin-left: 12px;
+    font-size: 20px;
+}
+.text span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.erroe404{
+    display: none;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+.erroe404 h1{
+    font-weight: 700;
+    text-align: center;
+}
+.erroe404 img{
+    width: 90%;
+    padding-left: 43px;
+
+}
