@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=">
+    <title>output of mysql</title>
+</head>
+<body>
+    <h1>data file list </h1>
+   <!-- <% %>== it use for js 
+        <%= %> it use for one veriable from server
+        <%- %> it use for object and array  -->
+            <table border="1",width="100%">
+                <tr>
+                    <th>Username </th>
+                    <th>email</th>
+                    <th>password1</th>
+                    <th>password2</th>
+                    <th>gender</th>
+                </tr>
+                <% for(let i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%- data[i].Username %></td>
+                        <td><%- data[i].email %></td>
+                        <td><%- data[i].password1 %></td>
+                        <td><%- data[i].password2 %></td>
+                        <td><%- data[i].gender %></td>
+                    </tr>
+                    <%}%>
+            </table>
+    
+</body>
+</html>
