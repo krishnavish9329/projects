@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>ForgetPass page</title>
+</head>
+<body>
+    <style>
+        body{
+    height: 700px;
+    width: 99%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+.box{
+    height: 346px;
+    width: 390px;
+    padding: auto;
+    border: 2px solid black;
+    margin: auto;
+}
+.email{
+    margin-top: 10px;
+    height: 34px;
+    width: 207px;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;    
+}
+#submitBtn{
+    margin-top: 15px;
+    height: 24px;
+    width: 138px;
+    color: black;
+    font-size: 20px;
+    border-radius: 23px;
+}
+#submitBtn:hover{
+    border : 3px solid red;
+    background-color:black ;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+#submitBtn:active{
+    background-color:rgb(255, 182, 71) ;
+    color: black;
+    box-shadow: 0 0 2px 2px rgb(251, 232, 185);
+}
+input{
+    margin-top: 15px;
+    height: 35px;
+    width: 75%;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+input:hover{
+    border : 3px solid red;
+    box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+p{
+    margin-top: 15px;
+    color: black;
+    font-size: 25px;
+}
+.box:hover{
+    border : 3px solid red;
+    box-shadow: 10px 10px 10px 10px rgb(183, 183, 183);
+}
+    </style>
+    <div class="box">
+        <form  method="post">
+            <p>Email Address</p>
+            <input type="email" id="email" placeholder="Enter your Email Address" name="email" required/>
+            <br />
+            <input type="text" id="number" placeholder="Enter your id" name="number"/>
+            <br />
+            <input id="submitBtn" value="SUBMIT" type="submit"/>
+            <br />
+            <a href="/">Login</a> <br>
+            <span>Don't have an account?</span>
+            <a href="/Register">Register</a>
+          </form>
+    </div>
+</body>
+</html>

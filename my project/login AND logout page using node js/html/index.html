@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>login and logout page</title>
+    <!-- <link rel="stylesheet" href="index.css" > -->
+</head>
+<body>
+    <style>
+        body{
+    height: 700px;
+    width: 99%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+input{
+    margin-top: 23px;
+    height: 35px;
+    width: 75%;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+input:hover{
+    border : 3px solid red;
+     box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+.box{
+    height: 246px;
+    width: 390px;
+    padding: auto;
+    border: 2px solid black;
+    margin: auto;
+}
+input::placeholder{
+    color: black;
+    font-size: 25px;
+}
+#submit{
+    height: 35px;
+    width: 115px;
+}
+#submit:hover{
+    border : 3px solid red;
+    background-color:black ;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+#submit:active{
+    background-color:rgb(255, 182, 71) ;
+    color: black;
+    box-shadow: 0 0 2px 2px rgb(251, 232, 185);
+}
+div{
+    margin-top: 8px;
+}
+.box:hover{
+    border : 3px solid red;
+    box-shadow: 10px 10px 10px 10px rgb(183, 183, 183);
+}
+    </style>
+    
+    <div class="box">
+        <form action="" method="post">
+            <input type="text" name="email" id="email" placeholder="enter number or gmail" required>
+            <input type="password" name="password" id="password" placeholder="enter password" required>
+            <input type="submit"  id="submit" value="submit">
+            <div>
+                <a href="/ForgotPass">Forgot Password?</a> <br />
+                <span>Don't have an account?</span>
+                <a href="/Register">Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

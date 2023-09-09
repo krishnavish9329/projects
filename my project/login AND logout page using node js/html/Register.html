@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>register page</title>
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 700px;
+    width: 99%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+.box{
+    height: 546px;
+    width: 390px;
+    border: 2px solid black;
+    margin: auto;
+}
+#usr,#email,#pas,#pas1{
+    margin-top: 15px;
+    height: 34px;
+    width: 207px;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+input:hover{
+    border : 3px solid red;
+    box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+input::placeholder{
+    color: black;
+    font-size: 20px;
+}
+p{
+    font-size: 25px;
+    margin-top: 16px;
+}
+.gender{
+    height: 4px;
+    width: 4px;
+    font-size: 25px;
+}
+#submitBtn{
+    margin-top:5px;
+    height: 24px;
+    width: 138px;
+    color: black;
+    font-size: 20px;
+    border-radius: 23px;
+}
+#submitBtn:hover{
+    border : 3px solid red;
+    background-color:black ;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px 5px rgb(183, 183, 183);
+}
+#submitBtn:active{
+    background-color:rgb(255, 182, 71) ;
+    color: black;
+    box-shadow: 0 0 2px 2px rgb(251, 232, 185);
+}
+.box:hover{
+    border : 3px solid red;
+    box-shadow: 10px 10px 10px 10px rgb(183, 183, 183);
+}
+    </style>
+    
+    <div class="box">
+        <form action="" method="post" name="myform" id="form">
+            <p>Username</p>
+            <input type="text" id="usr" placeholder="Username" name="user" required/>
+
+            <p style="margin-bottom:5px">Gender</p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male"><span class="gender">Male</span></label> 
+            <input type="radio" id="female" name="gender" value="female" /> 
+            <label for="female"><span class="gender">Female</span></label> 
+            <input type="radio" id="other" name="gender" value="other"  /> 
+            <label for="other"><span class="gender">Other</span></label>
+           
+            <p>Email Address</p>
+            <input type="email" name="email" id="email" placeholder="Email Address" required/> 
+            <p>Password</p>
+            <input type="password" id="pas" placeholder="Password" name="pass" required/> 
+            <p>Confirm Password</p>
+            <input type="password" id="pas1" placeholder="Confirm Password" name="pass1" required/> 
+            <br>
+            <input type="submit" id="submitBtn" value="REGISTER" name="register"/>
+            <br>
+            <span>Already have an account?</span>
+            <a href="/">Login</a>
+          </form>
+    </div>
+</body>
+</html>
